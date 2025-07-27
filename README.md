@@ -6,7 +6,6 @@ In today's fast-paced world, sleep is often neglected despite its crucial role i
 
 Using the [SaYoPillow dataset](https://www.kaggle.com/datasets/laavanya/human-stress-detection-in-and-through-sleep/data), which simulates sensor data collected by a smart yoga pillow system, we train a machine learning model to predict next-day stress levels based on sleep-related physiological parameters. This solution supports the development of "smart sleeping" technologies and contributes to the broader vision of AI-assisted wellness.
 
----
 
 ## 📂 2. Dataset Description
 
@@ -26,7 +25,6 @@ The dataset `SayoPillow.csv` contains simulated sensor data generated from liter
 
 > 📎 Source: [Human Stress Detection in and through Sleep – Kaggle](https://www.kaggle.com/datasets/laavanya/human-stress-detection-in-and-through-sleep/data)
 
----
 
 ## 🎯 3. Project Objectives
 
@@ -35,7 +33,6 @@ The dataset `SayoPillow.csv` contains simulated sensor data generated from liter
 - Containerize and deploy the model locally or to the cloud
 - Follow MLOps best practices (code quality, automation, CI/CD)
 
----
 
 ## ✅ 4. Self-Evaluation
 
@@ -50,7 +47,7 @@ The dataset `SayoPillow.csv` contains simulated sensor data generated from liter
 | Reproducibility                  | ✅ Environment and workflow are fully reproducible (Pipenv and Docker ensure reproducibility)  |
 | Best practices                   | ✅ Linter, code formatter, Makefile, pre-commit hooks, and CI/CD implemented  |
 
----
+
 ## 🔎 5. Experiment Tracking and Model Registry
 
 ```bash
@@ -64,10 +61,10 @@ python Workflow/model_train_orchestrate.py
 python Workflow/register_model.py
 ```
 
----
+
 ## 🚀 6. Model Deployment Instructions
 
-### 🔧 6.1 Quick Setup
+### 🔧 6.1 Method 1: Quick Setup
 
 ```bash
 # Clone the repository
@@ -82,14 +79,21 @@ docker build -f Deployment/Dockerfile -t sleep_stress_predictor .
 
 # Run Docker container
 docker run -v $(pwd):/app/ --network=host sleep_stress_predictor
+
+# Refer to 6.2.5 for testing examples
 ```
 
 
-### 🧪 6.2 Step-by-Step Reproducibility
+### 🧪 6.2 Method 2: Step-by-Step Reproducibility
 
 1. Create a virtual environment and install dependencies:
     ```bash
-    pipenv install --python=3.10
+    pipenv install --python=3.12
+
+    # Install dependencies - Option 1 (Recommended)
+    pipenv install
+
+    # Install dependencies - Option 2
     pipenv run pip install -r requirements.txt
     ```
 
