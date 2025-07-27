@@ -1,0 +1,8 @@
+mlflow
+scikit-learn
+pandas
+numpy
+xgboost
+flask
+docker
+prefect

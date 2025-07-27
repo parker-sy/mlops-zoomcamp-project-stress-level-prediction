@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-learn = "*"
+pandas = "*"
+numpy = "*"
+xgboost = "==3.0.2"
+flask = "==3.1.1"
+docker = "*"
+prefect = "==3.4.9"
+mlflow = "==2.22.0"
+
+[dev-packages]
+pylint = "==3.3.7"
+black = "==25.1.0"
+isort = "==6.0.1"
+pre-commit = "==4.2.0"
+
+[requires]
+python_version = "3.12"
